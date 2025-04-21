@@ -1,4 +1,4 @@
-# <h1> Hi, I'm Ukweh Chima, Everest! by name</h1>
+# <h1> Ukweh Chima, Everest's Portfolio</h1>
 
 <h2><Strong>Software Developer, Machine Learning/Artificial Intelligence Expert,  Security Analyst, Q/A Tester and a Freelancer</Strong></h2> <br><p>Formally a Backend Developer at <a href="https://amabillstechnologies.com/">Amabills Technology</a>, <br>Prior to That He was a Programing Tutor at <a href="https://www.elacademy.org.ng">El Academy Organisation</a> etc. </p>  
 <br>
