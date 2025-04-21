@@ -1,0 +1,40 @@
+{
+    "cSpell.words": [
+        "Gluestack",
+        "Ukweh"
+    ],
+    "glsl-canvas.extensions": [
+
+    ],
+    "glsl-canvas.formatting.enable": true,
+    "glsl-canvas.formatting.indent": 4,
+    "glsl-canvas.refreshOnChange": false,
+    "glsl-canvas.showErrors": true,
+    "glsl-canvas.showWarnings": true,
+    "glsl-canvas.refreshOnSave": true,
+    "glsl-canvas.formatting.newlineAfterOpenBracket": true,
+    "glsl-canvas.formatting.newlineBeforeCloseBracket": true,
+    "glsl-canvas.formatting.newlineBeforeOpenBracket": true,
+    "glsl-canvas.formatting.placeSpaceAfterCloseBracket": true,
+    "glsl-canvas.formatting.placeSpaceAfterComma": true,
+    "glsl-canvas.formatting.placeSpaceAfterSemicolon": true,
+    "glsl-canvas.formatting.placeSpaceBeforeCloseBracket": true,
+    "glsl-canvas.formatting.placeSpaceBeforeComma": true,
+    "glsl-canvas.formatting.placeSpaceBeforeSemicolon": true,
+    "glsl-canvas.formatting.placeSpaceBeforeOpeningBracket": true,
+    "webgl-glsl-editor.format.newlineAfterOpenBracket": true,
+    "webgl-glsl-editor.format.newlineBeforeCloseBracket": true,
+    "webgl-glsl-editor.format.newlineBeforeOpenBracket": true,
+    "webgl-glsl-editor.format.placeSpaceAfterCloseBracket": true,
+    "webgl-glsl-editor.format.placeSpaceBeforeOpeningBrackets": true,
+    "[glsl]": {
+        "editor.defaultFormatter": "raczzalan.webgl-glsl-editor"
+    },
+    "[frag]": {
+        "editor.defaultFormatter": "raczzalan.webgl-glsl-editor"
+    },
+    "[vert]": {
+        "editor.defaultFormatter": "raczzalan.webgl-glsl-editor"
+    },
+    "editor.formatOnSave": true,
+}
