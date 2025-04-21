@@ -7,7 +7,6 @@ import "./globals.css";
 import { Box } from "@/components/ui/box";
 import Navbar from "@/components/shared/nav-bar";
 import Image from "next/image";
-import { GestureHandlerRootView } from "react-native-gesture-handler"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,17 +35,15 @@ export default function RootLayout({
       >
         <StyledJsxRegistry>
           <GluestackUIProvider mode="light">
-            <GestureHandlerRootView style={{ flex: 1 }}>
-              <main>
-                <Box className={`h-full min-h-screen w-screen bg-black`}>
-                  <Box className="fixed z-[-10] h-[600px] w-[500px] opacity-70 lg:h-[700px] lg:w-[700px]">
-                    <Image src="/gradient.svg" alt="Gradient" fill priority />
-                  </Box>
-                  <Navbar />
-                  {children}
+            <main>
+              <Box className={`h-full min-h-screen w-screen bg-black`}>
+                <Box className="fixed z-[-10] h-[600px] w-[500px] opacity-70 lg:h-[700px] lg:w-[700px]">
+                  <Image src="/gradient.svg" alt="Gradient" fill priority />
                 </Box>
-              </main>
-            </GestureHandlerRootView>
+                <Navbar />
+                {children}
+              </Box>
+            </main>
           </GluestackUIProvider>
         </StyledJsxRegistry>
       </body>

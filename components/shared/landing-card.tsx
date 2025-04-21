@@ -65,28 +65,31 @@ function LandingCard() {
                             priority
                             src="/large-avatar.svg" alt={''}
                         />
-                        <Box className="absolute bottom-0 left-0 flex h-8 w-[500px] flex-row items-center justify-center border border-solid border-white px-2 max-md:bottom-10 max-md:w-full">
+                        <Box className="absolute bottom-0 left-0 flex h-8 w-[500px] flex-row items-center justify-center gap-3 border border-solid border-white px-2 max-md:bottom-10 max-md:w-full">
                             <Box className="flex">
                                 <Text className="text-white">Currently surfing the internet for something new</Text>
                             </Box>
-                            <Box className="flex">
-                                <Box className="relative h-8 w-8">
+                            <Box className="flex h-full flex-row items-center justify-start gap-1">
+                                <Box className="flex h-4 w-4 cursor-pointer rounded-sm border border-solid bg-white p-1">
                                     <Image
                                         fill
+                                        color="white"
                                         priority
                                         src="/github.svg" alt={''}
                                     />
                                 </Box>
-                                <Box className="relative h-8 w-8">
+                                <Box className="flex h-4 w-4 cursor-pointer rounded-sm border border-solid bg-white p-1">
                                     <Image
                                         fill
+                                        color="white"
                                         priority
                                         src="/linkedin.svg" alt={''}
                                     />
                                 </Box>
-                                <Box className="relative h-8 w-8">
+                                <Box className="flex h-4 w-4 cursor-pointer rounded-sm border border-solid bg-white p-1">
                                     <Image
                                         fill
+                                        color="white"
                                         priority
                                         src="/doc.svg" alt={''}
                                     />

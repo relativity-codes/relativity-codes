@@ -22,6 +22,7 @@ const ThreeScene: React.FC = () => {
 
   useEffect(() => {
     if (!containerRef.current) return;
+    const container = containerRef.current
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -29,7 +30,7 @@ const ThreeScene: React.FC = () => {
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFShadowMap;
 
-    containerRef.current.appendChild(renderer.domElement);
+    container.appendChild(renderer.domElement);
 
     const stats = new Stats();
     const clock = new THREE.Clock();
@@ -92,7 +93,7 @@ const ThreeScene: React.FC = () => {
 
     loader.loadAssets();
     sky.start();
-    const document = containerRef.current.ownerDocument;
+    const document = container.ownerDocument;
     document.addEventListener('pointerdown', () => controller.cameraControls.controls.lock());
     document.addEventListener('pointerdown', (e) => rayCaster.onPointerDown(e), false);
     document.addEventListener('pointerup', (e) => rayCaster.onPointerUp(e), false);
@@ -139,8 +140,8 @@ const ThreeScene: React.FC = () => {
 
     return () => {
       renderer.dispose();
-      if (containerRef.current?.contains(renderer.domElement)) {
-        containerRef.current.removeChild(renderer.domElement);
+      if (container?.contains(renderer.domElement)) {
+        container.removeChild(renderer.domElement);
       }
     };
   }, []);

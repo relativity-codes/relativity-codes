@@ -40,7 +40,7 @@ function throttle<T extends unknown[]>(
 }
 
 
-const PI_2 = Math.PI * 2
+// const PI_2 = Math.PI * 2
 const X_CNT = 30, Y_CNT = 30, SCALE = 200
 
 // source: three.js official demo
@@ -153,7 +153,7 @@ class SliderWave extends Component {
     }
 
     render() {
-        return <canvas className="absolute left-0 top-0 -z-20 h-screen w-screen opacity-0 md:opacity-100" key="slider-wave" ref={canvas => this.canvas = canvas} />
+        return <canvas className="absolute left-0 top-0 -z-20 h-screen w-screen opacity-0 md:opacity-100" key="slider-wave" ref={canvas => { this.canvas = canvas; }} />
     }
 }
 
