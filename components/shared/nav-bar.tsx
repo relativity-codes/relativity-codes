@@ -30,11 +30,11 @@ const Navbar = () => {
                             Home
                         </Text>
                     </Link>
-                    {/* <Link href="/skills" className={`flex cursor-pointer flex-row items-center gap-0 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent`}>
+                    <Link href="/skills" className={`flex cursor-pointer flex-row items-center gap-0 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent`}>
                         <Text className="font-semibold text-[#C778DD]">#</Text>
                         <Text className={`font-semibold text-white`}>Skills
                         </Text>
-                    </Link> */}
+                    </Link>
                     <Link href="/experience" className={`flex cursor-pointer flex-row items-center gap-0 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent`}>
                         <Text className="font-semibold text-[#C778DD]">#</Text>
                         <Text className={`font-semibold text-white`}>Experience
@@ -70,11 +70,11 @@ const Navbar = () => {
                             <Text className="text-md font-semibold text-[#C778DD]">#</Text>
                             <MenuItemLabel size="md" className="text-md font-semibold text-white hover:text-black focus:text-black">Experience</MenuItemLabel>
                         </MenuItem>
-                        {/* <MenuItem onPress={() => window.open("/skills")} className="cursor-pointer" key="Skills" textValue="Skills">
+                        <MenuItem onPress={() => window.open("/skills")} className="cursor-pointer" key="Skills" textValue="Skills">
                             <Text className="text-md font-semibold text-[#C778DD]">#</Text>
                             <MenuItemLabel size="md" className="text-md font-semibold text-white hover:text-black focus:text-black">Skills</MenuItemLabel>
                         </MenuItem>
-                        <MenuItem onPress={() => window.open("/about")} className="cursor-pointer" key="About" textValue="About">
+                        {/* <MenuItem onPress={() => window.open("/about")} className="cursor-pointer" key="About" textValue="About">
                             <Text className="text-md font-semibold text-[#C778DD]">#</Text>
                             <MenuItemLabel size="md" className="text-md font-semibold text-white hover:text-black focus:text-black">About</MenuItemLabel>
                         </MenuItem> */}

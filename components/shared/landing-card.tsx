@@ -14,7 +14,7 @@ function LandingCard() {
         setShowDrawer(show)
     }
     return (
-        <Box className={`flex ${(isBrowser && !isMobile) ? 'min-h-[500px]' : 'min-h-[350px]'} flex-col h-full items-start justify-center gap-10 px-4 md:flex-row md:items-center md:justify-between md:gap-0 md:px-32 py-12`}>
+        <Box className={`flex ${(isBrowser && !isMobile) ? 'min-h-[500px]' : 'min-h-[350px]'} flex-col h-full items-start justify-center gap-10 px-4 md:flex-row md:items-center md:justify-between md:gap-0 md:px-32 pt-12 pb-4`}>
             <Box className="z-10 flex min-h-[350px] w-full flex-col items-start justify-start gap-4 md:w-1/2">
                 <Box className="absolute bottom-6 right-4 h-[65px] w-[65px] max-md:opacity-0">
                     <Image
