@@ -96,7 +96,7 @@ const SkillsDisplay = () => {
                 <input
                     type="text"
                     placeholder="Search skills..."
-                    className="block w-full max-w-md rounded-lg border border-gray-300 bg-white p-3 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:border-gray-600 dark:bg-gray-800"
+                    className="block w-full max-w-md rounded-lg border border-gray-300 text-black bg-white p-3 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:border-gray-600 dark:bg-gray-800"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
