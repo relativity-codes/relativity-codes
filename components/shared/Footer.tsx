@@ -28,7 +28,7 @@ const PortfolioFooter: any = () => {
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }}
                         >
-                            Let's Build Something Amazing
+                            Let&apos;s Build Something Amazing
                         </motion.h3>
                         <motion.p
                             className="font-thin leading-relaxed text-white"
@@ -37,8 +37,8 @@ const PortfolioFooter: any = () => {
                             transition={{ duration: 0.5, delay: 0.1 }}
                             viewport={{ once: true }}
                         >
-                            I'm passionate about creating beautiful, functional digital experiences.
-                            Whether you have a project in mind or just want to connect, I'd love to hear from you.
+                            I&apos;m passionate about creating beautiful, functional digital experiences.
+                            Whether you have a project in mind or just want to connect, I&apos;d love to hear from you.
                         </motion.p>
                     </div>
 
