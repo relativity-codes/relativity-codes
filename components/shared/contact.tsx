@@ -9,107 +9,115 @@ import {
     DrawerBody,
 } from "@/components/ui/drawer";
 import { Heading } from "@/components/ui/heading";
-import { Text } from "@/components/ui/text";
 import { Box } from "../ui/box";
 import { CloseIcon, Icon } from "../ui/icon";
-import { Input, InputField } from "../ui/input";
-import { Textarea, TextareaInput } from "../ui/textarea";
-import {
-    NativeSyntheticEvent,
-    TextInputChangeEventData,
-} from "react-native";
-import { GestureResponderEvent } from "react-native";
 
 interface ContactProps {
     showDrawer: boolean;
     drawerToggle: (show: boolean) => void;
 }
 
-const Contact: React.FC<ContactProps> = ({ showDrawer, drawerToggle }) => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-    const [isLoading, setIsLoading] = useState(false);
-    const [isError, setIsError] = useState(false);
-    const [isSuccess, setIsSuccess] = useState(false);
-    const [honey, setHoney] = useState("");
 
-    const autoResponseMessage = `
-  <div style="font-family: Arial, sans-serif; color: #333;">
-    <h2 style="color: #7c3c8e;">Thank you for your message!</h2>
-    <p>
-      Thank you for reaching out to <strong>relativity-codes (Ukweh C. Everest)</strong>!
-      He will get back to you within the next <strong>48 hours</strong> from email:
-      <a href="mailto:ukweheverest@gmail.com" style="color: #7c3c8e;">ukweheverest@gmail.com</a>.
-    </p>
-    <p>
-      If no response is received, please send another message or call/text this number:
-      <a href="tel:+2348109502584" style="color: #7c3c8e;">+2348109502584</a>.
-    </p>
-    <p style="margin-top: 20px;">Thank you again!</p>
-  </div>
+const colors = {
+    primary: "#7c3c8e",
+    textDark: "#000000",
+    textLight: "#ffffff",
+    backgroundLight: "#f3f4f6"
+};
+
+const contactInfo = {
+    email: "ukweheverest@gmail.com",
+    phone: "+2348109502584",
+    linkedin: "https://www.linkedin.com/in/ukweheverest",
+    github: "https://github.com/relativity-codes",
+    name: "Ukweh C. Everest",
+    brandName: "relativity-codes"
+};
+
+const formFields = [
+    {
+        name: "name",
+        type: "text",
+        placeholder: "Enter Name here...",
+        required: true
+    },
+    {
+        name: "email",
+        type: "email",
+        placeholder: "Enter Email here...",
+        required: true
+    },
+    {
+        name: "message",
+        type: "textarea",
+        placeholder: "Enter Message here...",
+        required: true
+    }
+];
+
+const autoResponseMessage = `
+<div style="font-family: Arial, sans-serif; color: #333;">
+  <h2 style="color: #7c3c8e;">Thank you for your message!</h2>
+  <p>
+    Thank you for reaching out to <strong>${contactInfo.brandName} (${contactInfo.name})</strong>!
+    He will get back to you within the next <strong>48 hours</strong> from email:
+    <a href="mailto:${contactInfo.email}" style="color: #7c3c8e;">${contactInfo.email}</a>.
+  </p>
+  <p>
+    If no response is received, please send another message or call/text this number:
+    <a href="tel:${contactInfo.phone}" style="color: #7c3c8e;">${contactInfo.phone}</a>.
+  </p>
+  <p style="margin-top: 20px;">Thank you again!</p>
+</div>
 `;
 
-    const handleSubmit = async (e: GestureResponderEvent) => {
+const formEndpoint = "https://formsubmit.co/ajax/ukweheverest@gmail.com";
+
+const messages = {
+    success: "Message sent successfully!",
+    error: "Failed to send message. Please try again.",
+    validationError: "Please fill all required fields."
+};
+
+const Contact: React.FC<ContactProps> = ({ showDrawer, drawerToggle }) => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+    const [status, setStatus] = useState({ loading: false, error: false, success: false });
+
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
-        setIsLoading(true);
-        setIsError(false);
-        setIsSuccess(false);
+        setStatus({ loading: true, error: false, success: false });
 
         try {
-            if (!name || !email || !message) {
-                setIsError(true);
-                return;
-            }
-            if (honey) {
-                setIsError(true);
-                return;
-            }
-            const response = await fetch("https://formsubmit.co/ajax/ukweheverest@gmail.com", {
+            const response = await fetch(formEndpoint, {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({ name, email, message, _captcha: false, _autoresponse: autoResponseMessage }),
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    ...formData,
+                    _captcha: false,
+                    _autoresponse: autoResponseMessage
+                }),
             });
 
             if (response.ok) {
-                const result = await response.json();
-                console.log("Form submission successful:", result);
-                setIsSuccess(true);
-                setName("");
-                setEmail("");
-                setMessage("");
+                setStatus({ loading: false, error: false, success: true });
+                setFormData({ name: "", email: "", message: "" });
             } else {
-                const errorResult = await response.json();
-                console.error("Form submission failed:", errorResult);
-                setIsError(true);
+                setStatus({ loading: false, error: true, success: false });
             }
         } catch (error) {
-            console.error("Error submitting form:", error);
-            setIsError(true);
-        } finally {
-            setIsLoading(false);
-        }
-    };
-
-    const handleChange = (
-        e: NativeSyntheticEvent<TextInputChangeEventData>,
-        fieldName: string
-    ) => {
-        const { text } = e.nativeEvent;
-        if (fieldName === "name") {
-            setName(text);
-        } else if (fieldName === "email") {
-            setEmail(text);
-        } else if (fieldName === "message") {
-            setMessage(text);
+            console.log(error)
+            setStatus({ loading: false, error: true, success: false });
         }
     };
 
     return (
         <>
             <Drawer
+                className="absolute bottom-0 left-0 h-screen w-screen"
                 isOpen={showDrawer}
                 onClose={() => {
                     drawerToggle(false);
@@ -118,8 +126,8 @@ const Contact: React.FC<ContactProps> = ({ showDrawer, drawerToggle }) => {
                 anchor="bottom"
             >
                 <DrawerBackdrop />
-                <DrawerContent className="bg-black px-4 text-white md:px-10">
-                    <DrawerHeader className="flex flex-row items-center justify-between">
+                <DrawerContent className="bg-black text-white">
+                    <DrawerHeader className="flex flex-row items-center justify-between px-4 py-6 md:px-32">
                         <Box className="flex flex-row items-center justify-start gap-2">
                             <Heading size="2xl" className="text-gray-100">
                                 Contact Form
@@ -136,119 +144,79 @@ const Contact: React.FC<ContactProps> = ({ showDrawer, drawerToggle }) => {
                             </Button>
                         </Box>
                     </DrawerHeader>
-                    <DrawerBody className="rounded-md bg-gray-100">
-                        <Box className="flex h-full w-full flex-col items-center justify-center gap-4 md:flex-row md:gap-1">
-                            <Box className="mt-4 flex w-full flex-grow flex-col items-start justify-start gap-4 p-4 md:w-1/2">
-                                <Text className="text-black">You can fill out the form below:</Text>
-                                <Box className="flex w-full flex-grow flex-col items-start justify-start gap-2">
+                    <DrawerBody className="rounded-md bg-[rgba(0,0,0,0.5)] px-4 md:px-32">
+                        <div className="flex w-full flex-col items-start justify-center gap-4 md:flex-grow md:flex-row md:items-center md:justify-between">
+                            {/* Contact Form */}
+                            <div className="flex w-full flex-grow flex-col rounded-lg bg-black text-white shadow-md md:w-1/2">
+                                <h2 className="mb-4 text-xl font-semibold">Send a Message</h2>
+                                <form className="flex w-full flex-col" onSubmit={handleSubmit}>
+                                    {formFields.map((field) => (
+                                        <div key={field.name} className="mb-4">
+                                            {field.type === "textarea" ? (
+                                                <textarea
+                                                    placeholder={field.placeholder}
+                                                    // value={formData[field.name]}
+                                                    onChange={(e) => setFormData({ ...formData, [field.name]: e.target.value })}
+                                                    required={field.required}
+                                                    className="w-full rounded border p-2 text-black"
+                                                />
+                                            ) : (
+                                                <input
+                                                    type={field.type}
+                                                    placeholder={field.placeholder}
+                                                    // value={formData[field.name]}
+                                                    onChange={(e) => setFormData({ ...formData, [field.name]: e.target.value })}
+                                                    required={field.required}
+                                                    className="w-full rounded border p-2 text-black"
+                                                />
+                                            )}
+                                        </div>
+                                    ))}
 
-                                    <Input
-                                        variant="outline"
-                                        size="md"
-                                        isDisabled={isLoading}
-                                        isInvalid={isError}
-                                        isReadOnly={false}
-                                        className="w-full rounded-md border border-black p-2"
+                                    <button
+                                        type="submit"
+                                        disabled={status.loading}
+                                        className={`bg-[${colors.primary}] text-white px-4 py-2 rounded`}
                                     >
-                                        <InputField
-                                            placeholder="Enter Name here..."
-                                            className="text-black"
-                                            value={name}
-                                            onChange={(e) => handleChange(e, "name")}
-                                        />
-                                    </Input>
-                                    <Input
-                                        variant="outline"
-                                        size="md"
-                                        isDisabled={isLoading}
-                                        isInvalid={isError}
-                                        isReadOnly={false}
-                                        className="w-full rounded-md border border-black p-2"
-                                    >
-                                        <InputField
-                                            placeholder="Enter Email here..."
-                                            className="text-black"
-                                            value={email}
-                                            onChange={(e) => handleChange(e, "email")}
-                                        />
-                                    </Input>
-                                    <Textarea
-                                        size="md"
-                                        isDisabled={isLoading}
-                                        isReadOnly={false}
-                                        isInvalid={isError}
-                                        className="h-[100px] w-full rounded-md border border-black p-2 text-black"
-                                    >
-                                        <TextareaInput
-                                            placeholder="Enter Message here..."
-                                            className="text-black"
-                                            value={message}
-                                            onChange={(e) => handleChange(e, "message")}
-                                        />
-                                    </Textarea>
-                                    <input type="text" name="_honey" style={{ display: "none" }} value={honey} onChange={(e) => setHoney(e.target.value)} />
-                                    <Button
-                                        onPress={handleSubmit}
-                                        className="bg-[#7c3c8e]"
-                                        isDisabled={isLoading}
-                                    >
-                                        Send
-                                    </Button>
-                                    {isSuccess && (
-                                        <Text className="text-green-500">
-                                            Message sent successfully!
-                                        </Text>
-                                    )}
-                                    {isError && (
-                                        <Text className="text-red-500">
-                                            Failed to send message. Please try again.
-                                        </Text>
-                                    )}
+                                        {status.loading ? "Sending..." : "Send Message"}
+                                    </button>
 
-                                </Box>
-                            </Box>
-                            <Box className="flex w-full flex-col items-center justify-center gap-4 p-4 md:w-1/2">
-                                <Box className="flex w-full max-w-96 flex-col items-start justify-start gap-2">
-                                    <Text className="text-black">
-                                        Email:{" "}
-                                        <a
-                                            href="mailto:ukweheverest@gmail.com"
-                                            className="text-[#7c3c8e]"
-                                        >
-                                            ukweheverest@gmail.com
+                                    {status.success && <p className="mt-2 text-green-500">{messages.success}</p>}
+                                    {status.error && <p className="mt-2 text-red-500">{messages.error}</p>}
+                                </form>
+                            </div>
+
+                            {/* Contact Information */}
+                            <div className="flex w-full flex-col items-end justify-center rounded-lg bg-black p-6 text-white shadow-md md:w-1/2">
+                                {/* <h2 className="mb-4 w-full text-center text-xl font-semibold">Contact Information</h2> */}
+                                <div className="space-y-4">
+                                    <p>
+                                        <strong className="text-[#7c3c8e]" >Email:</strong>{" "}
+                                        <a href={`mailto:${contactInfo.email}`} className="text-white">
+                                            {contactInfo.email}
                                         </a>
-                                    </Text>
-                                    <Text className="text-black">
-                                        Phone:{" "}
-                                        <a href="tel:+2348109502584" className="text-[#7c3c8e]">
-                                            +2348109502584
+                                    </p>
+                                    <p>
+                                        <strong className="text-[#7c3c8e]">Phone:</strong>{" "}
+                                        <a href={`tel:${contactInfo.phone}`} className="text-white">
+                                            {contactInfo.phone}
                                         </a>
-                                    </Text>
-                                    <Text className="text-black">
-                                        LinkedIn:{" "}
-                                        <a
-                                            href="https://www.linkedin.com/in/ukweheverest"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-[#7c3c8e]"
-                                        >
-                                            linkedin.com/in/ukweheverest
+                                    </p>
+                                    <p>
+                                        <strong className="text-[#7c3c8e]">LinkedIn:</strong>{" "}
+                                        <a href={contactInfo.linkedin} target="_blank" rel="noopener" className="text-white">
+                                            {contactInfo.linkedin.split('//')[1]}
                                         </a>
-                                    </Text>
-                                    <Text className="text-black">
-                                        GitHub:{" "}
-                                        <a
-                                            href="https://github.com/relativity-codes"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-[#7c3c8e]"
-                                        >
-                                            github.com/relativity-codes
+                                    </p>
+                                    <p>
+                                        <strong className="text-[#7c3c8e]">GitHub:</strong>{" "}
+                                        <a href={contactInfo.github} target="_blank" rel="noopener" className="text-white">
+                                            {contactInfo.github.split('//')[1]}
                                         </a>
-                                    </Text>
-                                </Box>
-                            </Box>
-                        </Box>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </DrawerBody>
                 </DrawerContent>
             </Drawer >

@@ -34,7 +34,7 @@ function LandingCard() {
                         with strong experience and rational in building web applications and machine learning models. Passionate about creating efficient and scalable solutions.
                     </Text>
                 </Box>
-                <Box className="flex flex-col items-start justify-start gap-2">
+                <Box className="relative flex flex-col items-start justify-start gap-2">
                     <Button onPress={() => drawerToggle(true)} className="flex h-[45px] w-[150px] items-center justify-center rounded-2xl border border-[#C778DD] bg-transparent hover:border-[#c148e2] hover:bg-transparent hover:text-white focus:bg-transparent active:bg-[#000] active:bg-transparent">
                         <Text className="text-white">
                             Contact me !!
