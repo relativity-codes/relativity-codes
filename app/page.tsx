@@ -24,6 +24,9 @@ const Container = () => {
             <Box className="flex flex-col md:flex-row">
               <Quotes />
             </Box>
+            <Box>
+              {/* <Experience /> */}
+            </Box>
           </Box>
         </div>
       )}

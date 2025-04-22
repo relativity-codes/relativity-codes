@@ -7,6 +7,7 @@ import "./globals.css";
 import { Box } from "@/components/ui/box";
 import Navbar from "@/components/shared/nav-bar";
 import Image from "next/image";
+import PortfolioFooter from "@/components/shared/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,9 @@ export default function RootLayout({
                 </Box>
                 <Navbar />
                 {children}
+                <Box className="-z-10">
+                  <PortfolioFooter />
+                </Box>
               </Box>
             </main>
           </GluestackUIProvider>

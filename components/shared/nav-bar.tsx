@@ -10,42 +10,44 @@ import {
     AlignRight
 } from "lucide-react"
 import { useMediaQuery } from 'react-responsive';
+import Link from 'next/link';
 
 const Navbar = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     return (
-        <Box className={`flex h-16 w-screen flex-row items-center justify-between bg-transparent px-4 py-2 md:px-32`}>
+        <Box className={`fixed left-0 top-0 z-10 flex h-16 w-screen flex-row items-center justify-between bg-[rgba(0,0,0,0.5)] px-4 py-2 md:px-32`}>
             <Box className={`flex flex-row items-center space-x-2`}>
-                <Text className={`font-bold text-white`}>
+                <Link href="/" className=""> <Text className={`font-bold text-white`}>
                     R E L A T I V I T Y - C O D E S
                 </Text>
+                </Link>
             </Box>
             {(isBrowser && !isMobile) ?
                 (<Box className={`flex flex-row items-center gap-4`}>
-                    <Box className={`flex cursor-pointer flex-row items-center gap-0 hover:underline`}>
+                    <Link href="/" className={`flex cursor-pointer flex-row items-center gap-0 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent`}>
                         <Text className="font-semibold text-[#C778DD]">#</Text>
                         <Text className={`font-semibold text-white`}>
                             Home
                         </Text>
-                    </Box>
-                    <Box className={`flex cursor-pointer flex-row items-center gap-0 hover:underline`}>
+                    </Link>
+                    {/* <Link href="/skills" className={`flex cursor-pointer flex-row items-center gap-0 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent`}>
                         <Text className="font-semibold text-[#C778DD]">#</Text>
                         <Text className={`font-semibold text-white`}>Skills
                         </Text>
-                    </Box>
-                    <Box className={`flex cursor-pointer flex-row items-center gap-0 hover:underline`}>
+                    </Link> */}
+                    <Link href="/experience" className={`flex cursor-pointer flex-row items-center gap-0 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent`}>
                         <Text className="font-semibold text-[#C778DD]">#</Text>
                         <Text className={`font-semibold text-white`}>Experience
                         </Text>
-                    </Box>
-                    <Box className={`flex cursor-pointer flex-row items-center gap-0 hover:underline`}>
+                    </Link>
+                    {/* <Link href="/about" className={`flex cursor-pointer flex-row items-center gap-0 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent`}>
                         <Text className="font-semibold text-[#C778DD]">#</Text>
                         <Text className={`font-semibold text-white`}>About</Text>
-                    </Box>
-                    <Box className={`flex cursor-pointer flex-row items-center gap-0 hover:underline`}>
+                    </Link> */}
+                    <Link href="/contact" className={`flex cursor-pointer flex-row items-center gap-0 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent`}>
                         <Text className="font-semibold text-[#C778DD]">#</Text>
                         <Text className={`font-semibold text-white`}>Contact</Text>
-                    </Box>
+                    </Link>
                 </Box>) : (
                     <Menu
                         className="bg-black"
@@ -60,23 +62,23 @@ const Navbar = () => {
                             )
                         }}
                     >
-                        <MenuItem className="cursor-pointer" key="Home" textValue="Home">
+                        <MenuItem onPress={() => window.open("/")} className="cursor-pointer" key="Home" textValue="Home">
                             <Text className="text-md font-semibold text-[#C778DD]">#</Text>
                             <MenuItemLabel size="md" className="text-md font-semibold text-white hover:text-black focus:text-black">Home</MenuItemLabel>
                         </MenuItem>
-                        <MenuItem className="cursor-pointer" key="Experience" textValue="Experience">
+                        <MenuItem onPress={() => window.open("/experience")} className="cursor-pointer" key="Experience" textValue="Experience">
                             <Text className="text-md font-semibold text-[#C778DD]">#</Text>
                             <MenuItemLabel size="md" className="text-md font-semibold text-white hover:text-black focus:text-black">Experience</MenuItemLabel>
                         </MenuItem>
-                        <MenuItem className="cursor-pointer" key="Experience" textValue="Experience">
+                        {/* <MenuItem onPress={() => window.open("/skills")} className="cursor-pointer" key="Skills" textValue="Skills">
                             <Text className="text-md font-semibold text-[#C778DD]">#</Text>
                             <MenuItemLabel size="md" className="text-md font-semibold text-white hover:text-black focus:text-black">Skills</MenuItemLabel>
                         </MenuItem>
-                        <MenuItem className="cursor-pointer" key="About" textValue="About">
+                        <MenuItem onPress={() => window.open("/about")} className="cursor-pointer" key="About" textValue="About">
                             <Text className="text-md font-semibold text-[#C778DD]">#</Text>
                             <MenuItemLabel size="md" className="text-md font-semibold text-white hover:text-black focus:text-black">About</MenuItemLabel>
-                        </MenuItem>
-                        <MenuItem className="cursor-pointer" key="Contact" textValue="Contact">
+                        </MenuItem> */}
+                        <MenuItem onPress={() => window.open("/contact")} className="cursor-pointer" key="Contact" textValue="Contact">
                             <Text className="text-md font-semibold text-[#C778DD]">#</Text>
                             <MenuItemLabel size="md" className="text-md font-semibold text-white hover:text-black focus:text-black">Contact</MenuItemLabel>
                         </MenuItem>
