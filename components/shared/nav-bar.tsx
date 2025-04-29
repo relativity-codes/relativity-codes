@@ -50,7 +50,7 @@ const Navbar = () => {
                     </Link>
                 </Box>) : (
                     <Menu
-                        className="bg-black"
+                        className="bg-black text-white"
                         placement="bottom"
                         offset={5}
                         disabledKeys={["Settings"]}
