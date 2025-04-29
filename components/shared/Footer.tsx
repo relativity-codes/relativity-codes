@@ -15,8 +15,8 @@ const PortfolioFooter: any = () => {
     };
 
     return (
-        <footer className="bg-[rgba(0,0,0,0.5)] px-4 pb-8 pt-16 text-white md:px-32">
-            <div className="mx-auto max-w-7xl">
+        <footer className="bg-[rgba(0,0,0,0.5)] px-4 w-full pb-8 pt-16 text-white md:px-32">
+            <div className="w-full">
                 {/* Main Footer Content */}
                 <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-4">
                     {/* About Section */}
