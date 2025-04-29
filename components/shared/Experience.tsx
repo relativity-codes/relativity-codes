@@ -315,7 +315,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, isLast }) =
             </button>
 
             {!isLast && (
-                <div className="absolute bottom-0 left-16 h-6 w-full -translate-y-full transform bg-gray-200 dark:bg-gray-700" />
+                <div className="absolute bottom-0 left-16 h-6 w-px -translate-y-full transform bg-gray-200 dark:bg-gray-700" />
             )}
         </motion.div>
     );
