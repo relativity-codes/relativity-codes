@@ -315,7 +315,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, isLast }) =
             </button>
 
             {!isLast && (
-                <div className="absolute bottom-0 left-16 h-6 w-px -translate-y-full transform bg-gray-200 dark:bg-gray-700" />
+                <div className="absolute bottom-0 left-16 h-6 w-full -translate-y-full transform bg-gray-200 dark:bg-gray-700" />
             )}
         </motion.div>
     );
@@ -328,7 +328,7 @@ interface ExperienceCardsProps {
 const ExperienceCards: React.FC<ExperienceCardsProps> = ({ experiences }: ExperienceCardsProps) => {
     return (
         <div className="relative">
-            <div className="absolute bottom-0 left-16 top-0 w-px bg-gray-200 dark:bg-gray-700" />
+            <div className="absolute bottom-0 left-16 top-0 w-full bg-gray-200 dark:bg-gray-700" />
 
             <div className="space-y-6">
                 {experiences.map((exp, index) => (
