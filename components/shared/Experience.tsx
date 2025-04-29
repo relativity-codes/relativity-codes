@@ -228,7 +228,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, isLast }) =
     const duration = calculateDuration(experience.startDate, experience.endDate);
     return (
         <motion.div
-            className={`relative p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow ${!isLast && 'mb-6'}`}
+            className={`relative p-6 w-full bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow ${!isLast && 'mb-6'}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -327,7 +327,7 @@ interface ExperienceCardsProps {
 
 const ExperienceCards: React.FC<ExperienceCardsProps> = ({ experiences }: ExperienceCardsProps) => {
     return (
-        <div className="relative">
+        <div className="relative w-full">
             <div className="absolute bottom-0 left-16 top-0 w-px bg-gray-200 dark:bg-gray-700" />
 
             <div className="space-y-6">
