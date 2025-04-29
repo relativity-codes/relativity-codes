@@ -328,7 +328,7 @@ interface ExperienceCardsProps {
 const ExperienceCards: React.FC<ExperienceCardsProps> = ({ experiences }: ExperienceCardsProps) => {
     return (
         <div className="relative w-full">
-            <div className="absolute bottom-0 left-16 top-0 w-px bg-gray-200 dark:bg-gray-700" />
+            <div className="absolute bottom-0 left-16 top-0 w-px bg-gray-200 dark:bg-gray-700 z-[-1]" />
 
             <div className="space-y-6">
                 {experiences.map((exp, index) => (
