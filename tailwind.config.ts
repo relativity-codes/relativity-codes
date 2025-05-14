@@ -19,6 +19,15 @@ module.exports = {
 
   theme: {
     extend: {
+      maskImage: {
+        'fade-content-left': 'linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%)',
+        'fade-content-right': 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+        'fade-content-top': 'linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%)',
+        'fade-content-bottom': 'linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)',
+        'fade-content-sides': 'linear-gradient(to left, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+        'fade-content-ends': 'linear-gradient(to top, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)',
+        'fade-content-radial': 'radial-gradient(ellipse at center, transparent 0%, black 50%, transparent 100%)',
+      },
       colors: {
         primary: {
           0: "rgb(var(--color-primary-0)/<alpha-value>)",

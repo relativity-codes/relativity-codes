@@ -14,8 +14,8 @@ function LandingCard() {
         setShowDrawer(show)
     }
     return (
-        <Box className={`flex ${(isBrowser && !isMobile) ? 'min-h-[500px]' : 'min-h-[350px]'} flex-col h-full items-start justify-center gap-10 px-4 md:flex-row md:items-center md:justify-between md:gap-0 md:px-32 pt-12 pb-4`}>
-            <Box className="z-10 flex min-h-[350px] w-full flex-col items-start justify-start gap-4 md:w-1/2">
+        <Box className={`flex ${(isBrowser && !isMobile) ? 'min-h-[500px]' : 'min-h-[350px]'} flex-col h-full items-start justify-center gap-10 px-4 md:flex-row md:items-center md:justify-between md:gap-0 md:px-32 pt-24 pb-4`}>
+            <Box className="z-10 my-auto flex min-h-[350px] w-full flex-col items-start justify-center gap-4 md:w-1/2">
                 <Box className="absolute bottom-6 right-4 h-[65px] w-[65px] max-md:opacity-0">
                     <Image
                         fill
@@ -61,9 +61,10 @@ function LandingCard() {
                     </Box>
                     <Box className="absolute -z-10 h-[500px] w-[500px] max-md:w-full">
                         <Image
+                            className="mask-fade-content-sides opacity-[1] max-md:w-full"
                             fill
                             priority
-                            src="/large-avatar.svg" alt={''}
+                            src="/avatar.png" alt={''}
                         />
                         <Box className="absolute bottom-0 left-0 flex h-8 w-[500px] flex-row items-center justify-center gap-3 border border-solid border-white px-2 max-md:bottom-10 max-md:w-full">
                             <Box className="flex">
