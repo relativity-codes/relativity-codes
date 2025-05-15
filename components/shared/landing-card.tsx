@@ -16,7 +16,7 @@ function LandingCard() {
     return (
         <Box className={`flex ${(isBrowser && !isMobile) ? 'min-h-[500px]' : 'min-h-[350px]'} flex-col h-full items-start justify-center gap-10 px-4 md:flex-row md:items-center md:justify-between md:gap-0 md:px-32 md:pt-24 pt-6 pb-4`}>
             <Box className="z-10 md:my-auto flex min-h-[350px] w-full flex-col items-start justify-center gap-4 md:w-1/2">
-                <Box className="absolute max-md:bottom-6 md:top-10 right-4 h-[65px] w-[65px] max-md:opacity-0">
+                <Box className="absolute top-10 right-4 h-[65px] w-[65px] max-md:opacity-0">
                     <Image
                         fill
                         priority
@@ -42,7 +42,7 @@ function LandingCard() {
                     </Button>
                     <Contact showDrawer={showDrawer} drawerToggle={drawerToggle} />
                 </Box>
-                <Box className="absolute bottom-0 left-2 h-[65px] w-[65px] max-md:opacity-0">
+                <Box className="absolute top-10 left-2 h-[65px] w-[65px] max-md:opacity-0">
                     <Image
                         fill
                         priority
