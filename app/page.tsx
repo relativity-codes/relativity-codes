@@ -19,7 +19,7 @@ const Container = () => {
         <div style={{ opacity: style.o }} key="motion-content">
           <SliderWave />
           <Box className="flex h-full w-full flex-col items-start mx-auto justify-start gap-6 overflow-y-scroll py-4">
-            <Box className="flex h-full min-h-[650px] w-full md:min-h-[600px] pt-10">
+            <Box className="flex h-full min-h-[650px] w-full md:min-h-[600px] md:pt-10">
               <LandingCard />
             </Box>
             <Box className="flex flex-col md:flex-row">
