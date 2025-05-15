@@ -52,7 +52,7 @@ function LandingCard() {
             </Box>
             <Box className="flex w-full flex-col items-start justify-start md:w-1/2">
                 <Box className="-z-10 flex h-full w-full items-center justify-center">
-                    <Box className="absolute max-md:-top-16 md:top-10 left-2 h-[65px] w-[65px] md:left-14">
+                    <Box className="absolute top-10 left-2 h-[65px] w-[65px] md:left-14">
                         <Image
                             fill
                             priority
