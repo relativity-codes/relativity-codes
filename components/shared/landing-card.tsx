@@ -67,7 +67,7 @@ function LandingCard() {
                             src="/avatar.png" 
                             alt={''}
                         />
-                        <Box className="absolute bottom-0 left-0 flex h-8 w-[500px] flex-row items-center justify-center gap-3 border border-solid border-white px-2 max-md:bottom-10 max-md:w-full">
+                        <Box className="absolute bottom-0 left-0 flex h-8 w-[500px] flex-row items-center justify-center gap-3 border border-solid border-white px-2 max-md:bottom-0 max-md:w-full">
                             <Box className="flex">
                                 <Text className="text-white max-md:text-xs">Currently surfing the internet for something new</Text>
                             </Box>
