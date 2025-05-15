@@ -61,7 +61,7 @@ function LandingCard() {
                     </Box>
                     <Box className="absolute -z-10 h-[500px] w-[500px] max-md:w-full max-md:aspect-square">
                         <Image 
-                            className="max-md:object-cover max-h-full"
+                            className="max-md:object-cover max-h-full max-w-full"
                             fill
                             priority
                             src="/avatar.png" 
