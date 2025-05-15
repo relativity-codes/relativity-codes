@@ -23,7 +23,7 @@ function LandingCard() {
                         src="/grid-dots.svg" alt={''}
                     />
                 </Box>
-                <Box className="flex w-full flex-row items-center justify-center gap-2">
+                <Box className="flex w-full flex-row items-center justify-start gap-2">
                     <Text className="fira-code-font text-[25px] font-semibold text-typography-white">
                         Ukweh C. Everest is a
                         <Text className="p-1 text-[25px] text-[#C778DD]">Fullstack Developer</Text> and a <Text className="p-1 text-[25px] text-[#C778DD]">Machine Learning Engineer.</Text>
