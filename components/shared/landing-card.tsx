@@ -60,11 +60,12 @@ function LandingCard() {
                         />
                     </Box>
                     <Box className="absolute -z-10 h-[500px] w-[500px] max-md:w-full max-md:aspect-square max-md:relative">
-                        <Image                 
-className="max-md:object-cover"
+                        <Image 
+                            className="max-md:object-cover"
                             fill
                             priority
-                            src="/avatar.png" alt={''}
+                            src="/avatar.png" 
+                            alt={''}
                         />
                         <Box className="absolute bottom-0 left-0 flex h-8 w-[500px] flex-row items-center justify-center gap-3 border border-solid border-white px-2 max-md:bottom-10 max-md:w-full">
                             <Box className="flex">
