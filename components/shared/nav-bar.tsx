@@ -93,7 +93,7 @@ const Navbar = () => {
                                 whileHover="hover"
                             >
                                 <Link 
-                                    href={`/${item.toLowerCase()}`} 
+                                    href={`/${item.toLowerCase() === 'home'? '/' : item.toLowerCase()}`} 
                                     className={`flex cursor-pointer flex-row items-center gap-0 bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent`}
                                 >
                                     <Text className="font-semibold text-[#C778DD]">#</Text>
