@@ -130,7 +130,7 @@ const Navbar = () => {
                             {['Home', 'Experience', 'Skills', 'Contact'].map((item) => (
                                 <MenuItem 
                                     key={item}
-                                    onPress={() => window.open(`/${item.toLowerCase()}`)} 
+                                    onPress={() => window.open(`/${item.toLowerCase() === 'home'? '/' : item.toLowerCase()}`)} 
                                     className="cursor-pointer" 
                                     textValue={item}
                                 >
