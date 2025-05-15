@@ -59,7 +59,7 @@ function LandingCard() {
                             src="/maze.svg" alt={''}
                         />
                     </Box>
-                    <Box className="absolute -z-10 h-[500px] w-[500px] max-md:w-full">
+                    <Box className="absolute -z-10 h-[500px] w-[500px] max-md:w-full max-md:aspect-square">
                         <Image
                             className="mask-fade-content-sides opacity-[1] max-md:w-full"
                             fill
