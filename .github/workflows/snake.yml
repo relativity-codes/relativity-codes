@@ -1,27 +1,56 @@
-name: Generate Snake
+name: Activity Branch + Snake
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *"  # every 6 hours
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+        with:
+          ref: main  # start from main
 
-      - name: Generate Snake
+      # Node setup
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # Run commit script
+      - name: Update activity file
+        run: node update.js
+
+      # Push to dedicated 'activity' branch
+      - name: Commit and push to activity branch
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git checkout -B activity
+          git add activity.txt
+          git commit -m "Automated activity update $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push --force origin activity
+
+      # Generate snake SVGs (reading from activity branch)
+      - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: ${{ github.actor }}
+          github_token: ${{ secrets.TOKEN }}
+          branch: activity  # read contributions from activity branch
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      # Push SVGs to 'output' branch
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
