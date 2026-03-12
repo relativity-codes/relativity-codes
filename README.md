@@ -1,123 +1,285 @@
-## Hi there, I'm Everest Chima Ukweh! 👋 🚀
 
-I am a **Senior Full-Stack Software Engineer** with over 7 years of experience building and scaling high-impact platforms across **Fintech, Edtech, SaaS, and AI**. I specialize in designing scalable backend architectures , robust APIs , and integrating cutting-edge AI/LLM systems to solve complex real-world problems.
+# 🚀 Everest Chima Ukweh
 
----
+<p align="center">
 
-### 🛠️ What I Do 💻
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00C2FF&center=true&vCenter=true&width=900&lines=Senior+Full+Stack+Engineer;AI+%26+LLM+Systems+Engineer;Cloud+Native+Architect;Builder+of+Scalable+Platforms;Distributed+Systems+Developer" />
 
-* 
-**Full-Stack Development:** Expert in building end-to-end applications using **Python (Django/FastAPI)** , **Node.js (NestJS/Express)** , **PHP (Laravel)** , and **Java (Spring Boot)**. 🏗️
-
-
-* 
-**AI & Machine Learning:** Experienced in fine-tuning **Large Language Models (LLMs)** , implementing **Retrieval Augmented Generation (RAG)** , and deploying models to **AWS SageMaker**. 🤖
-
-
-* 
-**Cloud & Infrastructure:** Proficient in managing scalable environments on **AWS** and **GCP**. ☁️
-
-
-* 
-**Frontend & Mobile:** Crafting responsive UIs with **React** , **Next.js** , and **Tailwind CSS** , alongside cross-platform mobile apps with **React Native**. 📱
-
-
+</p>
 
 ---
 
-### 🧰 Tech Stack 🔧
+# 🧠 About Me
 
-| Category | Tools & Technologies |
-| --- | --- |
-| **Languages** | Python 🐍, JavaScript 📜, TypeScript 📘, Java ☕, PHP 🐘, Rust 🦀, C# 💠, SQL 🗄️ 
+Senior **Full-Stack Software Engineer & AI Systems Developer** with **7+ years building scalable production platforms** across **AI, fintech, SaaS, enterprise systems, and cloud infrastructure**.
 
- |
-| **Backend** | NestJS 🦁, Django 🎸, Laravel 🏎️, Spring Boot 🍃, Express.js ⚡, FastAPI 🚀, gRPC 📞 
+I specialize in:
 
- |
-| **Frontend** | React ⚛️, Next.js ⚡, Vue.js 🖖, Material UI 🎨, Tailwind CSS 🌊, Babylon.js (3D) 🎮 
+* **LLM Systems**
+* **AI Product Engineering**
+* **Distributed Backend Systems**
+* **Cloud Infrastructure**
+* **High-Performance APIs**
 
- |
-| **AI/ML** | PyTorch 🔥, TensorFlow 🧠, Transformers 🤖, LangChain 🔗, Scikit-Learn 📊, Pandas 🐼 
+I design software that goes from:
 
- |
-| **Cloud/DevOps** | AWS ☁️, GCP 🌐, Docker 🐳 
+```
+Idea → Architecture → Production → Scale
+```
 
- |
-| **Database/API** | PostgreSQL 🐘, Oracle 🚩, GraphQL 🕸️, RESTful APIs 🔌 
-
- |
+Platforms I've worked on serve **20k+ users** across multiple industries.
 
 ---
 
-### 🧪 Machine Learning & AI Projects 🧠
+# 🧠 AI & Machine Learning Work
 
-* 
-**CIBMTR Equity in post-HCT Survival Predictions:** Research-focused prediction model. 📊
+My recent engineering work focuses heavily on **AI infrastructure and LLM systems**.
 
+### AI systems I've built
 
-* 
-**Detect AI vs. Human-Generated Images:** Classification system to distinguish synthetic media. 🖼️
+* LLM **fine-tuning pipelines**
+* **Retrieval Augmented Generation (RAG)** systems
+* AI **knowledge assistants**
+* **AI data crawlers**
+* **AI-powered SaaS platforms**
 
+Example system architecture:
 
-* 
-**Rohlik Sales Forecasting Challenge:** Time-series forecasting for retail optimization. 📈
+```
+User Query
+     │
+     ▼
+API Gateway
+     │
+     ▼
+Vector DB Retrieval (RAG)
+     │
+     ▼
+Fine-Tuned LLM
+     │
+     ▼
+Structured Response
+```
 
-
-* 
-**Reviai.ai:** Real estate niche LLM with RAG integration. 🏠
-
-
-* 
-**Market Mind:** AI-driven market analysis platform. 💡
-
-
-
----
-
-### 📚 Currently Learning & Exploring 🔍
-
-* 
-**MCP Server Development:** Expanding capabilities in Model Context Protocol. 🔌
-
-
-* 
-**Rust Programming:** Deepening systems programming knowledge for high-performance applications. 🦀
-
-
-* 
-**Advanced LLM Orchestration:** Refining AI agent workflows and complex RAG architectures. 🤖
-
-
+Deployed using **AWS SageMaker + Django AI APIs**.
 
 ---
 
-### 📜 Certifications 🏆
+# ⚙️ Engineering Stack
 
-* 
-**AI & Machine Learning:** PyTorch, TensorFlow, and Data Science Bootcamps (Zero to Mastery). 🎓
+## Languages
 
+<p>
 
-* 
-**Software Engineering:** HackerRank Certified Software Engineer & Rest API (Intermediate). ✅
+<img src="https://skillicons.dev/icons?i=python,ts,js,java,php,rust" />
 
-
-* 
-**Instruction:** Certified Python Programming & Cyber-Security Instructor (El Academy). 👨‍🏫
-
-
+</p>
 
 ---
 
-### 📫 Connect with Me 🤝
+## Backend Systems
 
-* 
-**Portfolio:** [relativity-codes.vercel.app](https://relativity-codes.vercel.app) 🌐 
+<p>
 
+<img src="https://skillicons.dev/icons?i=django,nestjs,nodejs,spring,laravel,express" />
 
-* 
-**LinkedIn:** [linkedin.com/in/ukweheverest](https://linkedin.com/in/ukweheverest) 💼 
+</p>
 
+Capabilities
 
-* 
-**Email:** [ukweheverest@gmail.com](mailto:ukweheverest@gmail.com) 📧 
+* Distributed APIs
+* Microservice architecture
+* GraphQL & REST
+* Event-driven systems
+* High-performance services
+
+---
+
+## Frontend
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind" />
+
+</p>
+
+---
+
+## AI / ML
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow" />
+
+</p>
+
+Technologies
+
+* PyTorch
+* TensorFlow
+* Transformers
+* LangChain
+* Vector Databases
+* RAG pipelines
+
+---
+
+## Cloud & DevOps
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=aws,gcp,docker,linux" />
+
+</p>
+
+Production work includes
+
+* AWS SageMaker
+* CloudFront
+* Scalable deployments
+* Infrastructure optimization
+
+---
+
+# 🏗 Platform Engineering Work
+
+### 🧠 Reviai AI
+
+AI real-estate intelligence system.
+
+Features
+
+* Fine-tuned LLM
+* RAG knowledge engine
+* AI crawler pipeline
+* Django AI APIs
+* AWS deployment
+
+[https://reviai.ai](https://reviai.ai)
+
+---
+
+### 🏢 Urban Platform
+
+Backend architecture built with **NestJS**.
+
+Features
+
+* Wallet system
+* Payment infrastructure
+* AI chatbot assistant
+* Scalable microservices
+
+[https://urban.ng](https://urban.ng)
+
+---
+
+### 🚀 Walkre
+
+Full platform architecture.
+
+Stack
+
+* Spring Boot backend
+* Next.js frontend
+* React + Redux
+* REST + GraphQL APIs
+
+[https://walkre.com](https://walkre.com)
+
+---
+
+### 🏢 Enterprise SaaS Platform
+
+Multi-tenant system with:
+
+* Accounting
+* Inventory
+* Messaging
+* Staff management
+* Payment infrastructure
+
+[https://360corporation.co](https://360corporation.co)
+
+---
+
+# 📊 GitHub Analytics
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=relativity-codes&show_icons=true&theme=tokyonight&hide_border=true" />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=relativity-codes&layout=compact&theme=tokyonight&hide_border=true" />
+
+</p>
+
+---
+
+# 📈 Contribution Activity
+
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=relativity-codes&theme=tokyo-night&hide_border=true" />
+
+</p>
+
+---
+
+# 🧠 Engineering Interests
+
+I enjoy working on:
+
+* AI Agents
+* LLM Infrastructure
+* Distributed Systems
+* AI SaaS Platforms
+* Developer Infrastructure
+* Autonomous AI Systems
+
+---
+
+# 🌍 Languages
+
+* English
+* Igbo
+* Hausa
+
+---
+
+# 📫 Contact
+
+📧 **Email**
+
+```
+ukweheverest@gmail.com
+```
+
+💼 **LinkedIn**
+
+```
+linkedin.com/in/ukweheverest
+```
+
+🌐 **Portfolio**
+
+```
+relativity-codes.vercel.app
+```
+
+---
+
+# ⚡ Engineering Philosophy
+
+```text
+The best software is invisible.
+
+It scales without friction,
+handles complexity gracefully,
+and turns ambitious ideas into reliable systems.
+```
+
+---
+
+⭐ **Always open to collaboration on AI systems, large-scale platforms, and innovative software.**
+
+---
