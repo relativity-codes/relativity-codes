@@ -3,7 +3,13 @@
 
 <p align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00C2FF&center=true&vCenter=true&width=900&lines=Senior+Full+Stack+Engineer;AI+%26+LLM+Systems+Engineer;Cloud+Native+Architect;Builder+of+Scalable+Platforms;Distributed+Systems+Developer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=260&text=Everest%20Ukweh&fontAlign=50&fontAlignY=40&color=0:0ea5e9,100:6366f1&desc=AI%20Systems%20Engineer%20|%20Cloud%20Architect%20|%20Full%20Stack%20Engineer&descAlign=50&descAlignY=62"/>
+
+</p>
+
+<p align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=28&duration=3000&pause=1000&color=00C2FF&center=true&vCenter=true&width=900&lines=AI+%26+LLM+Systems+Engineer;Distributed+Systems+Developer;Cloud+Native+Architect;Builder+of+Scalable+Platforms;Full+Stack+Engineer" />
 
 </p>
 
