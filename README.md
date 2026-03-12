@@ -1,4 +1,3 @@
-
 # 🚀 Everest Chima Ukweh
 
 <p align="center">
@@ -9,238 +8,243 @@
 
 <p align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=28&duration=3000&pause=1000&color=00C2FF&center=true&vCenter=true&width=900&lines=AI+%26+LLM+Systems+Engineer;Distributed+Systems+Developer;Cloud+Native+Architect;Builder+of+Scalable+Platforms;Full+Stack+Engineer" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=28&duration=3000&pause=1000&color=00C2FF&center=true&vCenter=true&width=900&lines=AI+%26+LLM+Systems+Engineer;Distributed+Systems+Developer;Cloud+Native+Architect;Builder+of+Scalable+Platforms;Machine+Learning+Engineer" />
 
 </p>
 
 ---
 
-# 🧠 About Me
+# 🧠 AI Systems Engineer
 
-Senior **Full-Stack Software Engineer & AI Systems Developer** with **7+ years building scalable production platforms** across **AI, fintech, SaaS, enterprise systems, and cloud infrastructure**.
+Senior **Full-Stack Engineer & AI Systems Developer** with **7+ years building scalable platforms** across:
 
-I specialize in:
+* Artificial Intelligence
+* Fintech
+* SaaS
+* Enterprise Software
+* Cloud Infrastructure
 
-* **LLM Systems**
-* **AI Product Engineering**
-* **Distributed Backend Systems**
-* **Cloud Infrastructure**
-* **High-Performance APIs**
-
-I design software that goes from:
+I specialize in designing systems that move from:
 
 ```
-Idea → Architecture → Production → Scale
+Concept → Architecture → Production → Global Scale
 ```
-
-Platforms I've worked on serve **20k+ users** across multiple industries.
 
 ---
 
-# 🧠 AI & Machine Learning Work
+# 🔥 3D Animated Tech Stack
 
-My recent engineering work focuses heavily on **AI infrastructure and LLM systems**.
+<p align="center">
 
-### AI systems I've built
-
-* LLM **fine-tuning pipelines**
-* **Retrieval Augmented Generation (RAG)** systems
-* AI **knowledge assistants**
-* **AI data crawlers**
-* **AI-powered SaaS platforms**
-
-Example system architecture:
-
-```
-User Query
-     │
-     ▼
-API Gateway
-     │
-     ▼
-Vector DB Retrieval (RAG)
-     │
-     ▼
-Fine-Tuned LLM
-     │
-     ▼
-Structured Response
-```
-
-Deployed using **AWS SageMaker + Django AI APIs**.
-
----
-
-# ⚙️ Engineering Stack
-
-## Languages
-
-<p>
-
-<img src="https://skillicons.dev/icons?i=python,ts,js,java,php,rust" />
+<img src="https://skillicons.dev/icons?i=python,ts,js,java,php,rust,django,nestjs,nodejs,spring,laravel,express,react,nextjs,redux,tailwind,pytorch,tensorflow,aws,gcp,docker,linux&perline=8"/>
 
 </p>
 
 ---
 
-## Backend Systems
+# 📊 Live Engineering Dashboard
 
-<p>
+<p align="center">
 
-<img src="https://skillicons.dev/icons?i=django,nestjs,nodejs,spring,laravel,express" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=relativity-codes&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=relativity-codes&layout=compact&theme=tokyonight&hide_border=true"/>
 
 </p>
+
+<p align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=relativity-codes&theme=tokyonight"/>
+
+</p>
+
+---
+
+# 📈 GitHub Contribution Heatmap
+
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=relativity-codes&theme=tokyo-night&hide_border=true"/>
+
+</p>
+
+---
+
+# 📊 Developer Analytics
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=relativity-codes&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=relativity-codes&layout=compact&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+<p align="center">
+
+<img src="https://streak-stats.demolab.com?user=relativity-codes&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=relativity-codes&theme=tokyo-night&hide_border=true"/>
+
+</p>
+
+---
+
+# 🤖 AI Agents Lab
+
+### 🧠 AI Knowledge Agent
+
+Architecture:
+
+* RAG retrieval pipeline
+* embeddings vector search
+* LLM response generation
+* conversation memory layer
+
+Use cases
+
+* knowledge assistants
+* enterprise AI search
+* AI copilots
+
+---
+
+### 📊 AI Market Intelligence Agent
+
+Features
+
+* predictive sales models
+* market trend detection
+* ML forecasting pipelines
+
+[https://market-mind-frontend.vercel.app](https://market-mind-frontend.vercel.app)
+
+---
+
+### 🤖 Autonomous AI Customer Agent
 
 Capabilities
 
-* Distributed APIs
-* Microservice architecture
-* GraphQL & REST
-* Event-driven systems
-* High-performance services
+* natural language support
+* workflow automation
+* AI decision support
 
 ---
 
-## Frontend
+# 🧠 AI Research Lab
 
-<p>
+Active experimentation in:
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind" />
+### LLM Systems
 
-</p>
+* fine-tuning transformer models
+* retrieval augmented generation
+* vector search optimization
 
----
+### Machine Learning
 
-## AI / ML
+* survival prediction models
+* retail sales forecasting
+* AI vs human generated images
 
-<p>
+### AI Infrastructure
 
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow" />
-
-</p>
-
-Technologies
-
-* PyTorch
-* TensorFlow
-* Transformers
-* LangChain
-* Vector Databases
-* RAG pipelines
+* scalable LLM inference
+* AI microservices
+* distributed ML pipelines
 
 ---
 
-## Cloud & DevOps
+# 🧬 Interactive Architecture Diagrams
 
-<p>
+### LLM Platform
 
-<img src="https://skillicons.dev/icons?i=aws,gcp,docker,linux" />
+```mermaid
+flowchart TD
 
-</p>
-
-Production work includes
-
-* AWS SageMaker
-* CloudFront
-* Scalable deployments
-* Infrastructure optimization
-
----
-
-# 🏗 Platform Engineering Work
-
-### 🧠 Reviai AI
-
-AI real-estate intelligence system.
-
-Features
-
-* Fine-tuned LLM
-* RAG knowledge engine
-* AI crawler pipeline
-* Django AI APIs
-* AWS deployment
-
-[https://reviai.ai](https://reviai.ai)
+User --> API
+API --> EmbeddingModel
+EmbeddingModel --> VectorDB
+VectorDB --> Retriever
+Retriever --> LLM
+LLM --> Response
+Response --> User
+```
 
 ---
 
-### 🏢 Urban Platform
+### Scalable SaaS Infrastructure
 
-Backend architecture built with **NestJS**.
+```mermaid
+flowchart TD
 
-Features
-
-* Wallet system
-* Payment infrastructure
-* AI chatbot assistant
-* Scalable microservices
-
-[https://urban.ng](https://urban.ng)
-
----
-
-### 🚀 Walkre
-
-Full platform architecture.
-
-Stack
-
-* Spring Boot backend
-* Next.js frontend
-* React + Redux
-* REST + GraphQL APIs
-
-[https://walkre.com](https://walkre.com)
+Client --> CDN
+CDN --> LoadBalancer
+LoadBalancer --> APICluster
+APICluster --> Database
+APICluster --> Cache
+APICluster --> MessageQueue
+MessageQueue --> WorkerCluster
+WorkerCluster --> Storage
+```
 
 ---
 
-### 🏢 Enterprise SaaS Platform
-
-Multi-tenant system with:
-
-* Accounting
-* Inventory
-* Messaging
-* Staff management
-* Payment infrastructure
-
-[https://360corporation.co](https://360corporation.co)
-
----
-
-# 📊 GitHub Analytics
+# 📦 Auto-Generated Project Portfolio
 
 <p align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=relativity-codes&show_icons=true&theme=tokyonight&hide_border=true" />
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=relativity-codes&layout=compact&theme=tokyonight&hide_border=true" />
+<img src="https://github-profile-trophy.vercel.app/?username=relativity-codes&theme=tokyonight&margin-w=15&margin-h=15"/>
 
 </p>
 
+Your **best repositories appear automatically in pinned projects**.
+
+Recommended pinned repositories:
+
+* AI platform
+* LLM tooling
+* distributed backend
+* machine learning experiments
+* cloud infrastructure
+
 ---
 
-# 📈 Contribution Activity
+# 🧾 Open Source Impact
+
+Focus areas:
+
+* developer infrastructure
+* backend architecture
+* AI engineering patterns
+* distributed system design
+
+---
+
+# 🧠 Developer Reputation
 
 <p align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=relativity-codes&theme=tokyo-night&hide_border=true" />
+<img src="https://img.shields.io/badge/AI%20Engineer-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Cloud%20Architect-purple?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/FullStack%20Engineer-green?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/OpenSource%20Contributor-orange?style=for-the-badge"/>
 
 </p>
 
 ---
 
-# 🧠 Engineering Interests
+# 🐍 Contribution Snake
 
-I enjoy working on:
+<p align="center">
 
-* AI Agents
-* LLM Infrastructure
-* Distributed Systems
-* AI SaaS Platforms
-* Developer Infrastructure
-* Autonomous AI Systems
+<img src="https://raw.githubusercontent.com/relativity-codes/relativity-codes/output/github-contribution-grid-snake.svg"/>
+
+</p>
 
 ---
 
@@ -254,19 +258,19 @@ I enjoy working on:
 
 # 📫 Contact
 
-📧 **Email**
+**Email**
 
 ```
 ukweheverest@gmail.com
 ```
 
-💼 **LinkedIn**
+**LinkedIn**
 
 ```
 linkedin.com/in/ukweheverest
 ```
 
-🌐 **Portfolio**
+**Portfolio**
 
 ```
 relativity-codes.vercel.app
@@ -276,16 +280,31 @@ relativity-codes.vercel.app
 
 # ⚡ Engineering Philosophy
 
-```text
-The best software is invisible.
+```
+Great systems scale quietly.
 
-It scales without friction,
-handles complexity gracefully,
-and turns ambitious ideas into reliable systems.
+The best architecture
+solves today's problems
+while anticipating tomorrow's complexity.
 ```
 
 ---
 
-⭐ **Always open to collaboration on AI systems, large-scale platforms, and innovative software.**
+# 🧠 Career Timeline
+
+```
+2016 — Software Engineering Career Begins
+2022 — Programming & Cybersecurity Instructor
+2023 — Lead Developer (Walkre Platform)
+2024 — Full-Stack Engineer (Enterprise SaaS)
+2025 — AI / Machine Learning Engineer
+Present — Building AI Systems & Scalable Platforms
+```
 
 ---
+
+# 🎯 Mission
+
+Building **AI-powered platforms and intelligent systems** that scale globally and solve real-world problems.
+
+
