@@ -17,13 +17,7 @@ jobs:
         with:
           ref: main  # start from main
 
-      # Node setup
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-
-      # Generate snake SVGs (reading from activity branch)
+      # Generate snake SVGs (reading from main branch)
       - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
