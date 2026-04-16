@@ -23,27 +23,13 @@ jobs:
         with:
           node-version: 20
 
-      # Run commit script
-      - name: Update activity file
-        run: node update.js
-
-      # Push to dedicated 'activity' branch
-      - name: Commit and push to activity branch
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git checkout -B activity
-          git add activity.txt
-          git commit -m "Automated activity update $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
-          git push --force origin activity
-
       # Generate snake SVGs (reading from activity branch)
       - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.actor }}
           github_token: ${{ secrets.TOKEN }}
-          branch: activity  # read contributions from activity branch
+          branch: main  # read contributions from activity branch
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
