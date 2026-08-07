@@ -6,9 +6,12 @@ import {
     SiPython, SiJavascript, SiTypescript, SiPhp, SiHtml5, SiCss3,
     SiDjango, SiFastapi, SiLaravel, SiNestjs, SiExpress, SiReact, SiNextdotjs,
     SiRedux, SiVuedotjs, SiSpring, SiAmazon, SiDocker, SiTailwindcss,
-    SiGraphql, SiPandas, SiScikitlearn
+    SiGraphql, SiPandas, SiScikitlearn, SiRust, SiCplusplus, SiGnubash, SiSolidity,
+    SiPostgresql, SiMysql, SiRedis, SiPrisma, SiGit, SiNginx, SiGooglecloud
 } from 'react-icons/si';
 import { FaDatabase, FaJava } from 'react-icons/fa';
+import { TbBrandCSharp } from 'react-icons/tb';
+
 // Skill icon mapping
 const skillIcons: Record<string, React.JSX.Element> = {
     // Programming Languages
@@ -19,6 +22,12 @@ const skillIcons: Record<string, React.JSX.Element> = {
     'PHP': <SiPhp className="text-purple-700" />,
     'HTML': <SiHtml5 className="text-orange-500" />,
     'CSS': <SiCss3 className="text-blue-500" />,
+    'Rust': <SiRust className="text-orange-700" />,
+    'C++': <SiCplusplus className="text-blue-700" />,
+    'C#': <TbBrandCSharp className="text-purple-600" />,
+    'Bash': <SiGnubash className="text-gray-800 dark:text-gray-200" />,
+    'Solidity': <SiSolidity className="text-gray-700 dark:text-gray-300" />,
+    'GraphQL': <SiGraphql className="text-pink-600" />,
     // Frameworks
     'Django': <SiDjango className="text-green-800" />,
     'FastAPI': <SiFastapi className="text-teal-500" />,
@@ -28,15 +37,23 @@ const skillIcons: Record<string, React.JSX.Element> = {
     'React': <SiReact className="text-blue-500" />,
     'Next.js': <SiNextdotjs className="text-black dark:text-white" />,
     'Redux': <SiRedux className="text-purple-500" />,
+    'Redux Toolkit': <SiRedux className="text-purple-500" />,
     'Vue.js': <SiVuedotjs className="text-green-500" />,
     'Spring Boot': <SiSpring className="text-green-600" />,
     // Cloud & DevOps
     'AWS': <SiAmazon className="text-orange-500" />,
     'Docker': <SiDocker className="text-blue-500" />,
+    'Nginx': <SiNginx className="text-green-600" />,
+    'Git': <SiGit className="text-orange-600" />,
+    'Google Cloud Platform': <SiGooglecloud className="text-blue-500" />,
     // UI & Styling
     'Tailwind CSS': <SiTailwindcss className="text-cyan-500" />,
+    // Databases
+    'PostgreSQL': <SiPostgresql className="text-blue-600" />,
+    'MySQL': <SiMysql className="text-blue-500" />,
+    'Redis': <SiRedis className="text-red-600" />,
+    'Prisma': <SiPrisma className="text-blue-900 dark:text-blue-100" />,
     // API & Data
-    'GraphQL': <SiGraphql className="text-pink-600" />,
     'Pandas': <SiPandas className="text-blue-700" />,
     'Scikit-learn': <SiScikitlearn className="text-orange-500" />,
     'Database Design': <FaDatabase className="text-gray-600" />,
@@ -50,15 +67,15 @@ const SkillsDisplay = () => {
 
     const groupedSkills = {
         programmingLanguages: ["Python", "JavaScript", "TypeScript", "PHP", "Java", "SQL", "HTML", "CSS", "C++", "C#", "Go", "Rust", "Bash", "Solidity", "GraphQL"],
-        frameworksAndLibraries: ["Django", "FastAPI", "Laravel", "NestJS", "Express.js", "React", "React Native", "Next.js", "Redux", "Vue.js", "Spring Boot", "Babylon.js", "Blade Template", "Lighthouse GraphQL"],
-        machineLearningAndAI: ["Machine Learning", "Deep Learning", "Large Language Models (LLMs)", "Transformers", "Retrieval-Augmented Generation (RAG)", "Langchain", "AI-assisted crawling", "Scikit-learn", "Pandas"],
-        cloudAndDevOps: ["AWS", "Sagemaker", "Docker", "CI/CD", "Git", "GitHub Actions", "Serverless Architecture", "CloudFormation", "Nginx", "Apache", "Redis", "RabbitMQ", "GCP", "Cloudflare"],
-        databasesAndData: ["Database Design", "Data Engineering", "Relational Databases", "Multi-tenancy Architecture", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "SQLite", "Data Warehousing", "Data Lakes"],
+        frameworksAndLibraries: ["Django", "FastAPI", "Laravel", "NestJS", "Express.js", "React", "React Native", "Next.js", "Redux", "Redux Toolkit", "Vue.js", "Spring Boot", "Babylon.js", "Blade Template", "Lighthouse GraphQL", "Material UI", "Tailwind CSS"],
+        machineLearningAndAI: ["Machine Learning", "Deep Learning", "Large Language Models (LLMs)", "Generative AI", "AI Agents", "Retrieval-Augmented Generation (RAG)", "Prompt Engineering", "LangChain", "LangGraph", "Hugging Face Transformers", "OpenAI API", "Model Fine-Tuning (QLoRA / PEFT)", "MCP (Model Context Protocol)", "Vector Databases", "Semantic Search", "AI Evaluation", "Gradio", "PyTorch", "TensorFlow", "AI-assisted crawling", "Scikit-learn", "Pandas"],
+        cloudAndDevOps: ["AWS", "Sagemaker", "Docker", "CI/CD", "Git", "GitHub Actions", "Serverless Architecture", "CloudFormation", "Nginx", "Apache", "Redis", "RabbitMQ", "GCP", "Google Cloud Platform", "Cloudflare", "Linux"],
+        databasesAndData: ["Database Design", "Data Engineering", "Relational Databases", "Multi-tenancy Architecture", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "SQLite", "Data Warehousing", "Data Lakes", "Drizzle ORM", "Prisma", "Sequelize", "TypeORM"],
         uiAndStyling: ["Material UI", "Tailwind CSS", "Bootstrap", "Styled Components", "CSS Modules", "Sass", "Figma", "Adobe XD", "Responsive Design", "Cross-browser Compatibility"],
-        apiAndIntegration: ["RESTful APIs", "GraphQL", "API Integration", "Lighthouse GraphQL", "Webhooks", "OAuth", "JWT", "API Documentation", "Postman"],
-        cybersecurityAndNetworking: ["Cybersecurity", "Networking", "Application Security", "Penetration Testing", "Vulnerability Assessment", "Data Encryption", "SSL/TLS", "Firewall Configuration", "Intrusion Detection Systems (IDS)", "Network Protocols"],
-        softSkillsAndTeam: ["Code Review", "Team Collaboration", "Technical Instruction", "Customer Care", "Marketing Strategy", "Project Management", "Agile Methodologies", "Scrum", "Kanban", "Time Management", "Problem Solving"],
-        domainSpecificFeatures: ["Wallet Systems", "Payment Systems", "User Management", "Real Estate LLM", "E-commerce Development", "Exam and Training Portals", "3D Modeling", "Blogging Platforms", "Inventory Management", "Accounting Modules", "Production Tracking", "Data Analytics", "Business Intelligence"]
+        apiAndIntegration: ["RESTful APIs", "REST APIs", "GraphQL", "gRPC", "API Design", "API Integration", "Lighthouse GraphQL", "Webhooks", "OAuth", "JWT", "API Documentation", "Postman"],
+        cybersecurityAndNetworking: ["Distributed Systems", "Microservices", "API Design", "Test-Driven Development", "Cybersecurity", "Networking", "Application Security", "Penetration Testing", "Vulnerability Assessment", "Data Encryption", "SSL/TLS", "Firewall Configuration", "Intrusion Detection Systems (IDS)", "Network Protocols"],
+        softSkillsAndTeam: ["Software Architecture", "Technical Leadership", "System Design", "Code Reviews", "Mentorship", "Agile Development", "Performance Optimization", "Team Collaboration", "Technical Instruction", "Customer Care", "Marketing Strategy", "Project Management", "Scrum", "Kanban", "Time Management", "Problem Solving"],
+        domainSpecificFeatures: ["Wallet Systems", "Payment Systems", "User Management", "Real Estate LLM", "E-commerce Development", "Learning Management System (LMS)", "Examination Portal", "Exam and Training Portals", "3D Modeling", "Transportation Platform", "Multi-tenant ERP", "Blogging Platforms", "Inventory Management", "Accounting Modules", "Production Tracking", "Data Analytics", "Business Intelligence"]
     };
 
     const categoryTitles = {
@@ -69,8 +86,8 @@ const SkillsDisplay = () => {
         databasesAndData: "Databases & Data",
         uiAndStyling: "UI & Styling",
         apiAndIntegration: "API & Integration",
-        cybersecurityAndNetworking: "Cybersecurity & Networking",
-        softSkillsAndTeam: "Soft Skills & Team",
+        cybersecurityAndNetworking: "Security, Networking & Engineering",
+        softSkillsAndTeam: "Leadership & Collaboration",
         domainSpecificFeatures: "Domain Specific Features"
     };
 

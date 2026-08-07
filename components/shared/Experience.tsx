@@ -45,154 +45,206 @@ export interface DetailedExperienceType {
 
 const workExperience: any = [
     {
-        role: "Machine Learning/Deep Learning Developer",
-        company: "Reviai.tech",
-        location: "Abuja, Federal Capital Territory, Nigeria",
-        website: "https://www.reviai.tech",
-        startDate: "2025-02",
+        role: "Backend Engineer & AI Engineer",
+        company: "Taskify360",
+        location: "Texas, USA (Remote)",
+        website: "https://taskify360.com",
+        startDate: "2026-04",
         endDate: "Present",
-        stacks: ["Pytorch", "Transformers", "Python", "langchain", "Django", "AWS"],
+        stacks: ["Bun", "TypeScript", "Drizzle ORM", "PostgreSQL", "REST APIs", "Docker", "AI", "LLMs", "Git"],
         responsibilities: [
-            "Fine-tuned a Large Language Model (LLM) for real estate domain",
-            "Implemented Retrieval Augmented Generation (RAG)",
-            "Built AI-assisted data crawler",
-            "Deployed model to AWS Sagemaker and integrated with Django backend",
-            "Developed APIs using Django",
-            "Designed database and data structures",
-            "Implemented wallet, payment, user management features",
-            "Collaborated with frontend developers",
-            "Reviewed team code and provided support"
+            "Architected and developed a scalable marketplace platform featuring payment processing, digital wallets, and financial transaction management.",
+            "Designed and implemented high-performance backend services using Bun, TypeScript, Drizzle ORM, and PostgreSQL.",
+            "Built an AI-powered customer support assistant using Large Language Models (LLMs), reducing customer support workload by approximately 25%.",
+            "Developed secure REST APIs with a focus on maintainability, scalability, and clean architecture.",
+            "Collaborated with frontend engineers to define API contracts and streamline feature delivery.",
+            "Mentored engineers through architecture reviews, code reviews, and backend engineering best practices.",
+            "Contributed to deployment automation, monitoring, and overall platform reliability."
         ]
     },
     {
-        role: "Backend Developer",
-        company: "Urban.ng",
-        location: "Abuja, Federal Capital Territory, Nigeria",
-        website: "https://www.urban.ng",
+        role: "Senior Backend Engineer",
+        company: "Blip.ng",
+        location: "Abuja, Nigeria (Remote)",
+        website: "https://blip.ng",
         startDate: "2024-11",
         endDate: "Present",
-        stacks: ["NestJS", "TypeScript", "JavaScript", "ExpressJS"],
+        stacks: ["NestJS", "TypeScript", "PostgreSQL", "TypeORM", "Redis", "REST APIs", "Docker", "AI"],
         responsibilities: [
-            "Developed APIs using NestJS",
-            "Designed database and data structures",
-            "Implemented wallet, payment, user management features",
-            "Collaborated with frontend developers",
-            "Implemented AI-assisted chatbot",
-            "Reviewed team code and provided support"
+            "Led backend development for a transportation platform supporting ride-hailing, payments, and wallet infrastructure.",
+            "Engineered a high-throughput wallet and payment system processing over ₦109 million in monthly transactions.",
+            "Designed scalable REST APIs supporting bookings, user management, payments, and financial reconciliation.",
+            "Integrated AI-assisted customer support capabilities that significantly reduced manual support requests.",
+            "Improved API performance and database efficiency through query optimization and scalable service design.",
+            "Collaborated with cross-functional teams to deliver production-ready backend services.",
+            "Mentored developers through technical guidance, code reviews, and architectural recommendations."
         ]
     },
     {
-        role: "Full Stack Software Developer",
+        role: "Full-Stack Software Engineer",
+        company: "Nexoris Technologies",
+        location: "Abuja, Nigeria",
+        website: "https://nexoris.com",
+        startDate: "2025-08",
+        endDate: "2025-11",
+        stacks: ["NestJS", "React", "Next.js", "PostgreSQL", "TypeScript", "REST APIs"],
+        responsibilities: [
+            "Developed enterprise software solutions including a Learning Management System (LMS), online examination platform, and business management applications.",
+            "Designed backend APIs using NestJS with secure authentication, authorization, and role-based access control.",
+            "Built responsive frontend interfaces using React and Next.js.",
+            "Implemented the company's corporate website and landing pages, improving digital presence and usability.",
+            "Integrated AI-powered customer assistance features to improve user engagement and operational efficiency.",
+            "Worked closely with product stakeholders to translate business requirements into scalable technical solutions."
+        ]
+    },
+    {
+        role: "Machine Learning & AI Engineer",
+        company: "Reviai.ai",
+        location: "Abuja, Nigeria",
+        website: "https://reviai.ai",
+        startDate: "2025-02",
+        endDate: "2025-08",
+        stacks: ["Python", "Django", "AWS SageMaker", "Hugging Face", "Transformers", "RAG", "LangChain", "PostgreSQL", "REST APIs"],
+        responsibilities: [
+            "Fine-tuned Large Language Models (LLMs) for real estate applications, improving response quality and domain-specific accuracy by approximately 15%.",
+            "Designed and implemented a Retrieval-Augmented Generation (RAG) architecture for real-time knowledge retrieval and AI-assisted search.",
+            "Developed AI-powered web crawlers and automated data collection pipelines, significantly reducing manual data preparation.",
+            "Deployed production-ready AI models on AWS SageMaker and integrated them with Django backend services.",
+            "Designed scalable REST APIs supporting AI inference, document retrieval, and model interactions.",
+            "Collaborated with engineering teams to deploy secure, production-ready AI services.",
+            "Conducted architecture reviews and mentored developers on AI engineering best practices."
+        ]
+    },
+    {
+        role: "Full-Stack Software Engineer",
         company: "Management System Global",
-        location: "Abuja, Federal Capital Territory, Nigeria",
+        location: "Abuja, Nigeria",
         website: "https://www.msspaceglobal.com",
         startDate: "2024-08",
-        endDate: "Present",
-        stacks: ["Material UI", "Tailwind CSS", "TypeScript", "React", "Next.js", "PHP", "AWS", "Laravel"],
+        endDate: "2025-02",
+        stacks: ["React", "Next.js", "Laravel", "PHP", "JavaScript", "MySQL", "REST APIs"],
         responsibilities: [
-            "Developed client applications using React/Next.js",
-            "Implemented wallet, exam, training, and payment features",
-            "Collaborated with backend for REST API development using Laravel",
-            "Reviewed team code and provided support"
+            "Built enterprise web applications using React, Next.js, and Laravel for clients across multiple industries.",
+            "Developed features including payment processing, digital wallets, training systems, examination modules, and business workflows.",
+            "Designed reusable frontend components and optimized application performance for improved user experience.",
+            "Collaborated with backend engineers to deliver scalable RESTful APIs and seamless frontend integration.",
+            "Performed code reviews and contributed to engineering quality standards across development teams."
         ]
     },
     {
-        role: "Full Stack Software Developer",
+        role: "Full-Stack Software Engineer",
         company: "Orion Industrial Resources Ltd",
-        location: "Abuja, Federal Capital Territory, Nigeria",
+        location: "Abuja, Nigeria",
         website: "http://emp.sanitracksuite.com",
         startDate: "2024-02",
         endDate: "2024-08",
-        stacks: ["Material UI", "Tailwind CSS", "TypeScript", "BabylonJS", "ExpressJS", "React", "React Native", "AWS"],
+        stacks: ["React", "Vite", "Express.js", "TypeScript", "Babylon.js", "PostgreSQL"],
         responsibilities: [
-            "Developed client applications using React with Vite",
-            "Implemented 3D modeling with BabylonJS",
-            "Built REST APIs using ExpressJS with TypeScript",
-            "Reviewed mobile app code and supported the dev team"
+            "Developed modern web applications using React, Vite, Express.js, and TypeScript.",
+            "Implemented interactive 3D visualization features using Babylon.js for industrial applications.",
+            "Built scalable backend APIs supporting business operations and client workflows.",
+            "Collaborated with mobile engineers to ensure consistent API integration across platforms.",
+            "Reviewed pull requests, improved code quality, and supported junior developers through technical mentorship."
         ]
     },
     {
-        role: "Full Stack Software Developer",
+        role: "Lead Full-Stack Software Engineer",
         company: "Walkre.com",
-        location: "Abuja, Federal Capital Territory, Nigeria",
+        location: "Abuja, Nigeria (Remote)",
         website: "https://www.walkre.com",
         startDate: "2023-01",
-        endDate: "2024-02",
-        stacks: ["JavaScript", "React", "Laravel", "PHP", "Node.js", "SQL", "REST", "GraphQL"],
+        endDate: "Present",
+        stacks: ["Java", "Spring Boot", "React", "Next.js", "Redux", "GraphQL", "REST APIs", "PostgreSQL", "Docker", "Git"],
         responsibilities: [
-            "Led full-stack development of the Walkre platform",
-            "Developed REST APIs using Laravel",
-            "Built frontend with Next.js, React, Redux",
-            "Managed frontend styling with CSS/HTML",
-            "Oversaw architecture and implementation"
+            "Lead the end-to-end architecture, design, and development of Walkre, a trust-first e-commerce and marketplace platform built to improve secure online commerce.",
+            "Architected scalable backend services using Spring Boot (Java), designing RESTful APIs for authentication, marketplace operations, payments, order management, inventory, messaging, and user management.",
+            "Designed and implemented a modern frontend using Next.js, React, and Redux, delivering a responsive, high-performance user experience.",
+            "Engineered secure payment workflows, marketplace infrastructure, and scalable data models supporting buyers, sellers, and administrators.",
+            "Integrated GraphQL and REST APIs to support efficient communication between frontend and backend services.",
+            "Led technical decision-making, system architecture, code quality initiatives, and development planning throughout the product lifecycle.",
+            "Collaborated closely with product stakeholders to transform business requirements into scalable technical solutions.",
+            "Established engineering standards, reviewed pull requests, mentored developers, and promoted clean architecture and software engineering best practices."
         ]
     },
     {
-        role: "Full Stack Software Developer",
+        role: "Full-Stack Software Engineer",
         company: "Swifre.com",
-        location: "Abuja, Federal Capital Territory, Nigeria",
+        location: "Abuja, Nigeria",
         website: "https://www.swifre.com",
         startDate: "2023-09",
         endDate: "2023-11",
-        stacks: ["JavaScript", "React", "Laravel", "PHP", "Node.js", "SQL", "REST", "GraphQL"],
+        stacks: ["Laravel", "PHP", "React", "JavaScript", "GraphQL", "MySQL"],
         responsibilities: [
-            "Developed a blog platform allowing users to register and post articles"
+            "Contributed to the development of a community-driven blogging and publishing platform enabling user-generated content and social engagement.",
+            "Developed backend APIs and frontend features supporting user authentication, content publishing, comments, notifications, and profile management.",
+            "Implemented GraphQL services to improve frontend data retrieval efficiency and reduce unnecessary API requests.",
+            "Collaborated with designers and backend engineers to deliver responsive, user-friendly experiences across web platforms.",
+            "Improved application maintainability through reusable components and modular architecture."
         ]
     },
     {
-        role: "Backend & Mobile Software Developer",
+        role: "Backend & Mobile Software Engineer",
         company: "Amabills Technologies",
-        location: "Abuja, Federal Capital Territory, Nigeria",
-        websites: ["https://www.360corporation.co", "https://theloda.co"],
+        location: "Abuja, Nigeria",
+        website: "https://www.360corporation.co",
         startDate: "2023-03",
         endDate: "2023-11",
-        stacks: ["JavaScript", "TypeScript", "React", "React Native", "Laravel", "Lighthouse GraphQL", "Node.js", "SQL", "VueJS"],
+        stacks: ["Laravel", "PHP", "Lighthouse GraphQL", "React", "React Native", "Next.js", "MySQL"],
         responsibilities: [
-            "Built web and mobile apps using React, React Native, Laravel, and GraphQL",
-            "Implemented multi-tenant architecture for 360corporation",
-            "Collaborated on admin web app using Next.js",
-            "Developed accounting, feeds, inventory, and production tracking modules"
+            "Developed enterprise SaaS solutions for multiple clients using Laravel, GraphQL, React, React Native, and Next.js.",
+            "Designed scalable backend APIs using Laravel and Lighthouse GraphQL, enabling efficient communication across web and mobile applications.",
+            "Helped build a sophisticated multi-tenant enterprise platform supporting accounting, inventory management, production tracking, staff management, messaging, sales, work scheduling, and payment processing.",
+            "Collaborated with mobile engineers to build cross-platform applications using React Native while simultaneously developing administration dashboards with Next.js.",
+            "Improved application scalability through modular backend architecture and reusable API services.",
+            "Participated in architectural discussions, code reviews, and engineering planning across multiple client projects."
         ]
     },
     {
-        role: "Tutor and Software Developer",
+        role: "Software Engineering Instructor & Software Engineer",
         company: "EL Academy",
-        location: "Abuja, Federal Capital Territory, Nigeria",
+        location: "Abuja, Nigeria",
         website: "https://www.elacademy.org.ng",
         startDate: "2022-02",
         endDate: "2023-02",
-        stacks: ["Python", "Django", "FastAPI", "PHP", "Laravel", "Cybersecurity", "Networking", "HTML", "CSS", "JavaScript", "Scikit-learn", "Pandas", "Power BI", "SQL", "Java", "Spring Boot"],
+        stacks: ["Python", "Django", "PHP", "Laravel", "JavaScript", "MySQL"],
         responsibilities: [
-            "Taught programming and cybersecurity",
-            "Led development of secure e-commerce websites",
-            "Used Django and Laravel in hands-on training",
-            "Contributed to marketing and strategic planning"
+            "Delivered practical software engineering training covering Python, PHP, Laravel, Django, cybersecurity, networking, and software development best practices.",
+            "Designed structured learning programs that enabled students to build real-world web applications using modern development frameworks.",
+            "Mentored aspiring software developers through hands-on coding sessions, project reviews, debugging, and career guidance.",
+            "Led development of secure client web applications while promoting secure coding practices and application security.",
+            "Contributed to organizational planning, technical decision-making, and digital transformation initiatives."
         ]
     },
     {
-        role: "Wallet Funding Officer, Customer Care Representative",
+        role: "Wallet Operations & Customer Support Specialist",
         company: "Recharge And Get Paid DRC",
-        location: "Abuja, Federal Capital Territory, Nigeria",
+        location: "Abuja, Nigeria",
         website: "https://www.rechargeandgetpaid.cm",
         startDate: "2019-03",
         endDate: "2021-12",
         stacks: ["Html", "CSS", "Customer Service", "Fraud Prevention", "Wallet Management"],
         responsibilities: [
-            "Funded wallets manually via admin dashboard",
-            "Verified payment documents to prevent fraud",
-            "Handled client support calls and inquiries",
-            "Managed a large customer base and expanded reach"
+            "Managed secure digital wallet funding operations and payment verification for a large-scale financial services platform.",
+            "Verified customer payment transactions, reducing fraud risk and maintaining transaction accuracy.",
+            "Provided customer support for a user base of approximately one million customers through phone and online channels.",
+            "Resolved account, payment, and wallet-related issues while maintaining high customer satisfaction.",
+            "Worked closely with operations teams to improve payment workflows and operational efficiency."
         ]
     },
     {
         role: "Junior Software Developer",
         company: "Walker Nigeria",
-        location: "Nigeria",
+        location: "Abuja, Nigeria",
+        website: "",
         startDate: "2016-01",
         endDate: "2021-01",
-        stacks: ["PHP", "Laravel", "Blade Template", "JavaScript", "HTML", "CSS"],
+        stacks: ["PHP", "Laravel", "JavaScript", "HTML", "CSS", "MySQL"],
         responsibilities: [
-            "Built applications for hotel booking, flights, tourism, and car rentals"
+            "Developed web applications supporting hotel reservations, flight bookings, tourism services, and vehicle rental operations.",
+            "Built backend functionality using PHP and Laravel while developing responsive frontend interfaces with HTML, CSS, JavaScript, and Blade.",
+            "Implemented booking management features, customer portals, and business management tools.",
+            "Collaborated with senior developers on application enhancements, debugging, testing, and production deployments.",
+            "Gained strong foundational experience in full-stack web development, database design, and software engineering best practices."
         ]
     }
 ];

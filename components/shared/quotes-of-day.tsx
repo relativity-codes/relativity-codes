@@ -11,23 +11,54 @@ interface Quote {
     length: number;
 }
 
+const fallbackQuotes: Quote[] = [
+    {
+        id: "1",
+        content: "The best architecture solves today's problems while anticipating tomorrow's complexity.",
+        author: "Everest Ukweh",
+        authorSlug: "everest-ukweh",
+        length: 83
+    },
+    {
+        id: "2",
+        content: "Great systems scale quietly.",
+        author: "Everest Ukweh",
+        authorSlug: "everest-ukweh",
+        length: 28
+    },
+    {
+        id: "3",
+        content: "Simplicity is the soul of efficiency.",
+        author: "Austin Freeman",
+        authorSlug: "austin-freeman",
+        length: 37
+    }
+];
+
 const Quotes = () => {
     const [quotes, setQuotes] = useState<Quote[]>([]);
     const icons = ["lightbulb-person.svg", "rocket.svg", "lightbulb-person.svg", "rocket.svg"];
 
     useEffect(() => {
+        const fetchQuote = async () => {
+            const res = await fetch('https://api.realinspire.live/v1/quotes/random');
+            if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+            return res.json();
+        };
+
         const getQuotes = async () => {
             try {
                 const fetchedArrays: Quote[][] = await Promise.all([
-                    fetch('https://api.realinspire.live/v1/quotes/random').then(res => res.json()),
-                    fetch('https://api.realinspire.live/v1/quotes/random').then(res => res.json()),
-                    fetch('https://api.realinspire.live/v1/quotes/random').then(res => res.json())
+                    fetchQuote(),
+                    fetchQuote(),
+                    fetchQuote()
                 ]);
                 console.log("Fetched Arrays:", fetchedArrays);
                 const mergedQuotes = fetchedArrays.flat();
-                setQuotes(mergedQuotes);
+                setQuotes(mergedQuotes.length > 0 ? mergedQuotes : fallbackQuotes);
             } catch (err) {
                 console.error("Error fetching quotes:", err);
+                setQuotes(fallbackQuotes);
             }
         };
 

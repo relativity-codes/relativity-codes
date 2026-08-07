@@ -16,7 +16,7 @@
 
 # 🧠 AI Systems Engineer
 
-Senior **Full-Stack Engineer & AI Systems Developer** with **7+ years building scalable platforms** across:
+Senior **Full-Stack Engineer & AI Systems Developer** with **10+ years building scalable platforms** across:
 
 * Artificial Intelligence
 * Fintech
@@ -300,8 +300,9 @@ while anticipating tomorrow's complexity.
 2016 — Software Engineering Career Begins
 2022 — Programming & Cybersecurity Instructor
 2023 — Lead Developer (Walkre Platform)
-2024 — Full-Stack Engineer (Enterprise SaaS)
-2025 — AI / Machine Learning Engineer
+2024 — Senior Backend & Full-Stack Engineer
+2025 — Machine Learning, AI & Full-Stack Engineer
+2026 — Andela AI Engineering Fellow & AI/Backend Engineer (Taskify360)
 Present — Building AI Systems & Scalable Platforms
 ```
 

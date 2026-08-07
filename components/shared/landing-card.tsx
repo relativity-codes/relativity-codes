@@ -26,12 +26,12 @@ function LandingCard() {
                 <Box className="flex w-full flex-row items-center justify-start gap-2">
                     <Text className="fira-code-font text-[25px] font-semibold text-typography-white">
                         Ukweh C. Everest is a
-                        <Text className="p-1 text-[25px] text-[#C778DD]">Fullstack Developer</Text> and a <Text className="p-1 text-[25px] text-[#C778DD]">Machine Learning Engineer.</Text>
+                        <Text className="p-1 text-[25px] text-[#C778DD]">Senior Full-Stack</Text> & <Text className="p-1 text-[25px] text-[#C778DD]">AI Systems Engineer.</Text>
                     </Text>
                 </Box>
                 <Box className="flex flex-col items-start justify-start gap-2">
                     <Text className="text-gray-300">
-                        with strong experience and rational in building web applications and machine learning models. Passionate about creating efficient and scalable solutions.
+                        with 10+ years of experience designing scalable backend systems, cloud-native applications, AI-powered platforms, and distributed software solutions.
                     </Text>
                 </Box>
                 <Box className="relative flex flex-col items-start justify-start gap-2">
